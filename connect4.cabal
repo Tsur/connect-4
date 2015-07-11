@@ -57,11 +57,11 @@ executable connect4
   -- other-extensions:    
   
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.7 && <4.8, haskell98
+  build-depends:       base >=4.7 && <4.8, wx, wxcore
   
   -- Directories containing source files.
   -- hs-source-dirs:      
   
   -- Base language which the package is written in.
-  default-language:    Haskell98
+  default-language:    Haskell2010
   

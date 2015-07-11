@@ -16,3 +16,22 @@ If you have cabalg, just run:
 ```bash
 $ cabalg https://github.com/Tsur/connect4
 ```
+
+# Developers
+
+You need to install some dependeces before going on as [Wx](https://wiki.haskell.org/WxHaskell)
+
+Then just configure and build the project:
+
+```bash
+$ cabal sandbox init
+$ cabal install wx cabal-macosx
+$ cabal configure
+$ cabal build
+```
+
+Now you can run connect4 game:
+
+```bash
+$ ./dist/build/connect4/connect4
+``
