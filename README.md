@@ -7,12 +7,12 @@ This is a Haskell implementation for the classic Connect Four game, also known a
 Make sure you have installed the Haskell platform. This includes both the Glasgow Haskell Compiler (GHC) and the Cabal package manager. You may download it all form [here](https://www.haskell.org/platform/)
 
 ```bash
-$ git clone https://github.com/Tsur/connect-4
-$ cabal install connect-4/connect-4.cabal
+$ git clone https://github.com/Tsur/connect4
+$ cabal install connect4/connect4.cabal
 ```
 
 If you have cabalg, just run:
 
 ```bash
-$ cabalg https://github.com/Tsur/connect-4
+$ cabalg https://github.com/Tsur/connect4
 ```
