@@ -7,8 +7,11 @@ This is a Haskell implementation for the classic Connect Four game, also known a
 Make sure you have installed the Haskell platform. This includes both the Glasgow Haskell Compiler (GHC) and the Cabal package manager. You may download it all form [here](https://www.haskell.org/platform/)
 
 ```bash
-$ git clone https://github.com/Tsur/connect4
-$ cabal install connect4/connect4.cabal
+$ git clone https://github.com/Tsur/connect4 && cd connect4
+$ cabal sandbox init # You might want to set it up locally
+$ cabal install connect4.cabal
+$ .cabal_sandbox/bin/build/connect4/connect4
+$ cabal sandbox delete # uninstall the application
 ```
 
 If you have cabalg, just run:
@@ -34,4 +37,12 @@ Now you can run connect4 game:
 
 ```bash
 $ ./dist/build/connect4/connect4
-``
+```
+
+For running it without building, just go with:
+
+```bash
+$ ghc -package wx -o connect4 Main.hs
+$ ./connect4
+```
+
